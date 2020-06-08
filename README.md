@@ -11,3 +11,6 @@ This is a fun little adapter that converts 2x *USB3 A-B cables* to a USB3.0 spec
 #Images
 ![front](front.png)
 ![back](back.png)
+
+#Manufacturing
+Use the gerbers in the zip file. Designed to match JLC's JLC7628 stackup with 4 layers.
