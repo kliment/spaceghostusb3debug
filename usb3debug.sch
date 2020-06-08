@@ -1,0 +1,150 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB3_B J1
+U 1 1 5EDDD51E
+P 3650 2850
+F 0 "J1" H 3707 3567 50  0000 C CNN
+F 1 "USB3_B" H 3707 3476 50  0000 C CNN
+F 2 "corelib:USB3-TypeB-U235-091N-4BLRC16-2-5" H 3800 2950 50  0001 C CNN
+F 3 "~" H 3800 2950 50  0001 C CNN
+	1    3650 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB3_B J2
+U 1 1 5EDDE489
+P 5300 2850
+F 0 "J2" H 4870 2814 50  0000 R CNN
+F 1 "USB3_B" H 4870 2723 50  0000 R CNN
+F 2 "corelib:USB3-TypeB-U235-091N-4BLRC16-2-5" H 5450 2950 50  0001 C CNN
+F 3 "~" H 5450 2950 50  0001 C CNN
+	1    5300 2850
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 4150 2650
+NoConn ~ 4150 2750
+NoConn ~ 4150 2450
+NoConn ~ 4800 2450
+NoConn ~ 4800 2650
+NoConn ~ 4800 2750
+Wire Wire Line
+	4800 3050 4450 3050
+Wire Wire Line
+	4450 3050 4450 3350
+Wire Wire Line
+	4450 3350 4150 3350
+Wire Wire Line
+	4150 3250 4400 3250
+Wire Wire Line
+	4400 3250 4400 2950
+Wire Wire Line
+	4400 2950 4800 2950
+Wire Wire Line
+	4800 3250 4650 3250
+Wire Wire Line
+	4650 3250 4650 2700
+Wire Wire Line
+	4650 2700 4250 2700
+Wire Wire Line
+	4250 2700 4250 2950
+Wire Wire Line
+	4250 2950 4150 2950
+Wire Wire Line
+	4150 3050 4300 3050
+Wire Wire Line
+	4300 3050 4300 2750
+Wire Wire Line
+	4300 2750 4600 2750
+Wire Wire Line
+	4600 2750 4600 3350
+Wire Wire Line
+	4600 3350 4800 3350
+Wire Wire Line
+	5300 3550 4300 3550
+Wire Wire Line
+	5400 3550 5400 3650
+Wire Wire Line
+	5400 3650 4700 3650
+Wire Wire Line
+	3550 3650 3550 3550
+Wire Wire Line
+	3450 3550 3450 3700
+Wire Wire Line
+	3450 3700 5500 3700
+Wire Wire Line
+	5500 3700 5500 3550
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5EDE18A6
+P 4300 3550
+F 0 "#FLG0101" H 4300 3625 50  0001 C CNN
+F 1 "PWR_FLAG" H 4300 3723 50  0000 C CNN
+F 2 "" H 4300 3550 50  0001 C CNN
+F 3 "~" H 4300 3550 50  0001 C CNN
+	1    4300 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5EDE18F9
+P 4700 3650
+F 0 "#FLG0102" H 4700 3725 50  0001 C CNN
+F 1 "PWR_FLAG" H 4700 3823 50  0000 C CNN
+F 2 "" H 4700 3650 50  0001 C CNN
+F 3 "~" H 4700 3650 50  0001 C CNN
+	1    4700 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 4700 3650
+Wire Wire Line
+	4700 3650 3550 3650
+Connection ~ 4300 3550
+Wire Wire Line
+	3650 3550 4300 3550
+Text Label 4650 2850 0    50   ~ 0
+AN
+Text Label 4600 2750 0    50   ~ 0
+AP
+Text Label 4400 2950 0    50   ~ 0
+BN
+Text Label 4450 3050 0    50   ~ 0
+BP
+Text Label 3550 3650 0    50   ~ 0
+DRAIN
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5EDE5600
+P 4250 2100
+F 0 "H1" H 4350 2146 50  0000 L CNN
+F 1 "MountingHole" H 4350 2055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4250 2100 50  0001 C CNN
+F 3 "~" H 4250 2100 50  0001 C CNN
+	1    4250 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5EDE5ACE
+P 4250 2300
+F 0 "H2" H 4350 2346 50  0000 L CNN
+F 1 "MountingHole" H 4350 2255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4250 2300 50  0001 C CNN
+F 3 "~" H 4250 2300 50  0001 C CNN
+	1    4250 2300
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
